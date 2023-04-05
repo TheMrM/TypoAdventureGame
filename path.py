@@ -6,13 +6,13 @@ def slow_print(text, delay=0.03):
         time.sleep(delay)
     print()
     
-def path():
+def path(delay_speed):
     while True:
         path_choice = input("Which path do you choose? (left/right) ")
         if path_choice == "left":
             slow_print("You have chosen the left path. Adventure awaits!")
             from trees import forest
-            forest()
+            forest(delay_speed)
             return path_choice
         
         if path_choice == "right":

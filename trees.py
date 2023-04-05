@@ -11,13 +11,13 @@ def forest(delay_speed):
     slow_print(ascii.spider)
     
     # Code where players make decision to fight the spider with sword or bow
-    weapon_choice = input("Which weapon do you choose? (sword/bow) ", delay_speed)
+    weapon_choice = input("Which weapon do you choose? (sword/bow) ")
     if weapon_choice == "sword":
         slow_print(f"You have chosen the sword. {ascii.sword}", delay_speed)
-        spider_fight_sword(characters.player_stats, characters.spider_stats)
+        spider_fight_sword(characters.player_stats, characters.spider_stats, delay_speed)
     elif weapon_choice == "bow":
         slow_print(f"You have chosen the bow. {ascii.bow}", delay_speed)
-        spider_fight_bow(characters.player_stats, characters.spider_stats)
+        spider_fight_bow(characters.player_stats, characters.spider_stats, delay_speed)
     else:
         slow_print("Please choose a valid weapon.", delay_speed)
         forest(delay_speed)

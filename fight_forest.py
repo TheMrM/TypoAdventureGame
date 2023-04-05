@@ -10,7 +10,7 @@ def slow_print(text, delay=0.03):
     print()
 
 # Spider fight with sword
-def spider_fight_sword(player_stats, spider_stats):
+def spider_fight_sword(player_stats, spider_stats, delay_speed):
     while True:
         slow_print("Type 'roll' to roll the dice that will determine your next action in the battle: ")
         roll = input()
@@ -44,7 +44,7 @@ def spider_fight_sword(player_stats, spider_stats):
             return
 
 # Spider fight with bow
-def spider_fight_bow(player_stats, spider_stats):
+def spider_fight_bow(player_stats, spider_stats, delay_speed):
     while True:
         slow_print("Type 'roll' to roll the dice that will determine your next action in the battle: ")
         roll = input()
@@ -69,8 +69,8 @@ def spider_fight_bow(player_stats, spider_stats):
         if player_stats['life'] <= 0:
             slow_print("You have lost all your lives. You have failed to vanquish the spider.")
             slow_print(f"Game OVER!\n{ascii.skull}")
-            from main import beginning
-            beginning()
+            from main import beginning, delay_speed
+            beginning(delay_speed)
             break
         elif spider_stats['life'] <= 0:
             slow_print(f"You have vanquished the spider. The dragon awaits.\n{ascii.map_forest_1}")

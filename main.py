@@ -1,4 +1,3 @@
-
 import ascii
 import time
 
@@ -19,7 +18,7 @@ def beginning(delay_speed):
                 }
             player_stats = reset_player_stats
             from path import path
-            path()
+            path(delay_speed)
 
         elif start_game.lower() == "no":
             slow_print(f"                  Game OVER!\n{ascii.skull}", delay_speed)
@@ -28,15 +27,13 @@ def beginning(delay_speed):
             slow_print("Invalid choice. Please choose 'yes' or 'no'.", delay_speed)
 
 if __name__ == "__main__":
-
-    delay_speed = input("Welcome to the game! Please insert your desired speed :) \nYou may do so, by choosing a value between 1 and 5, from fastest(1) to slowest(5) :D We propose the value 3, if unsure. :)\n")
+    slow_print("Welcome to the game! Please select your desired game speed:\n1 - Fast\n2 - Fast-Medium\n3 - Medium\n4 - Slow-Medium\n5 - Slow\n")
+    delay_speed = input("Choose your option: ")
     while delay_speed not in "12345":
-        delay_speed = input("Please insert a proper value :) ")
+        delay_speed = input("Please enter a valid option (1-5): ")
     delay_speed = int(delay_speed) * 0.01
-    print(delay_speed)
 
     slow_print("In a far-off land, deep within a dense forest, there lived a mighty dragon.\nThe dragon was feared and respected by all who knew of it, for it was said\nthat the dragon possessed great power and wisdom. However, as mighty as\nthe dragon was, it was not invincible.", delay_speed)
     slow_print(f"Embark on the uncharted, where your map awaits, with adventure to create.\n{ascii.map}", delay_speed)
-    #beginning(delay_speed)
-    from dragons import dragon
-    dragon()
+
+    beginning(delay_speed)
