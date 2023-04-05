@@ -1,3 +1,4 @@
+![banner](https://raw.githubusercontent.com/TheMrM/TypoAdventureGame/main/files/Typo%20Trek%20A%20Misadventure%20in%20Text.png)
 # Dragon Slayer Game
 
 In this game, the player's objective is to fight and defeat a dragon. The player has two weapons to choose from: a sword and a bow. However, before they can fight the dragon, they must choose between two paths, left or right.
