@@ -29,7 +29,10 @@ Game Over
     If the player defeats the dragon, they win the game and the game is over.
     Credits
     This game was developed by Grasum/Themrm.
-
+    People who have influenced in the creation of this game
+    [Acorn1010](https://github.com/acorn1010)
+    People who have contribute to this game
+    [CiprianAmza](https://github.com/CiprianAmza)
 Problems
     Game is not yet fully working encountering problem when fighting trough roll.
     Game sometimes continue to loop itself
