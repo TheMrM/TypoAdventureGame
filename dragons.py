@@ -1,15 +1,9 @@
 import ascii
 import characters
 from characters import player_stats
-import time
-
-def slow_print(text, delay=0.03):
-    for char in text:
-        print(char, end='', flush=True)
-        time.sleep(delay)
-    print()
 
 def dragon_fight():
+    from main import slow_print
     slow_print("With no time to waist, you must choose wisely? (sword/bow) ")
     weapon_choice = input()
     if weapon_choice == "sword":
@@ -33,7 +27,7 @@ def dragon_fight():
     return True
 
 def dragon():
-    slow_print(f"Your journey has come to an end. The dragon awaits. {ascii.map_finish}")
+    from main import slow_print
     slow_print(f"You have entered the castle with no one in sight. {ascii.castle}")
     slow_print(f"Is that a thunrering sound? {ascii.fire}")
     slow_print("Dragon's flaps so strong and grand, they shake the earth and move the land.")
