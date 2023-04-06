@@ -36,5 +36,6 @@ if __name__ == "__main__":
     slow_print("In a far-off land, deep within a dense forest, there lived a mighty dragon.\nThe dragon was feared and respected by all who knew of it, for it was said\nthat the dragon possessed great power and wisdom. However, as mighty as\nthe dragon was, it was not invincible.", delay_speed)
     slow_print(f"Embark on the uncharted, where your map awaits, with adventure to create.\n{ascii.map}", delay_speed)
 
+
     beginning(delay_speed)
 
