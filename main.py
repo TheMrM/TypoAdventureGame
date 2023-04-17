@@ -37,3 +37,4 @@ if __name__ == "__main__":
     slow_print(f"Embark on the uncharted, where your map awaits, with adventure to create.\n{ascii.map}", delay_speed)
 
     beginning(delay_speed)
+
